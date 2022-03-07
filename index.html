@@ -19,46 +19,46 @@
 
         <form id="form">
             <label >First Name</label>
-            <input type="text" id="NAME" placeholder="Enter Name">
+            <input type="text" id="name" placeholder="Enter Name">
             <br/>
               <label >Last Name</label>
-              <input type="text" id="LAST NAME" placeholder="Enter Last Name">
+              <input type="text" id="lastName" placeholder="Enter Last Name">
               <br/>
               <label>Date Of Birth</label>
-              <input type="text" id="number" placeholder="YYYY/MM/DD">
+              <input type="text" id="dob" placeholder="YYYY/MM/DD">
               <br/>
               <label>Cell Number</label>
               <input type="text" id="number" placeholder="000-000-0000">
               <br/>
                 <label >Email</label>
-                <input type="Email" id="Email" placeholder="Enter Email">
+                <input type="Email" id="email" placeholder="Enter Email">
                 <br/>
 
                 <label>Will You Attend?</label>
-                <div id="label-radio">
+                <div>
                   <div>
                     <label>Yes</label>
-                    <input type="radio" name="selection">
+                    <input onclick="show() "type="radio" value="Yes" id="attend" name="selection">
                   </div>
                   <div>
                     <label>No</label>
-                    <input type="radio" name="selection">
+                    <input type="radio" onclick="hide()" value="No" id="attend" name="selection">
                   </div>
                 </div>
                 
                   <br/>
-
+                 <div style="display:none" id="preference">
                   <label>Are You Coming With A Partner?</label>
                   <div id="label-radio">
 
                     <div>
                       <label>Yes</label>
-                  <input type="radio" name="selectionPartner"> 
+                  <input type="radio" id="partner" name="selectionPartner"> 
                  </div>
                     
                  <div>
                   <label>No</label>
-                  <input type="radio" name="selectionPartner">
+                  <input type="radio" id="partner" name="selectionPartner">
                  </div>
 
                  </div>
@@ -67,7 +67,7 @@
                   <br/>
 
                  
-                    <label id="preference">Food Preference:</label>
+                    <label id="">Food Preference:</label>
                     <div>
                       <div>
                       <input type="checkbox">
@@ -88,16 +88,30 @@
                       <label>Shrimp And Grits</label>
                     </div>
                     </div>
-                    
+                  </div>
                
                   <br/>
                   <br/>
 
+
+                <div id="submit">
+                  <button type="submit" onclick="mySubmit(event)">submit</button>
+                </div>
+
+                <div id="error">
+     
+                </div>
+                 
+                <div id="success">
+     
+                </div>
                  
                 </form>
-                
-    </section>
+                <div id="display">
 
+                </div>
+    </section>
     
+    <script src="./main.js"></script>
 </body>
 </html>
