@@ -12,6 +12,7 @@
 }
 
 
+
 #label-radio{
     display: grid;
     grid-template-columns: 1fr 1fr
@@ -53,6 +54,7 @@ font-style: italic
  font-size:25px;
  font-style: italic
 }
+
  #submit {
     text-align: center
  }
